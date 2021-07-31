@@ -1,10 +1,10 @@
 {
-  "name": "javascript",
+  "name": "typescript",
   "version": "1.0.0",
-  "description": "A repository for All algorithms implemented in Javascript (for educational purposes only)",
+  "description": "A repository for All algorithms implemented in Typescript (for educational purposes only)",
   "main": "",
   "scripts": {
-    "test": "jest --no-cache"
+    "test": "jest --config ./jest.config.ts"
   },
   "author": "TheAlgorithms",
   "license": "GPL-3.0",
@@ -16,7 +16,9 @@
     "eslint": "^7.32.0",
     "jsdom": "^16.3.0",
     "node": "^14.13.1",
-    "node-fetch": "2.6.1"
+    "node-fetch": "2.6.1",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.1.0"
   },
   "standard": {
     "env": [
@@ -24,9 +26,12 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.24",
     "babel-jest": "^26.3.0",
     "doctest": "^0.17.1",
-    "jest": "^26.4.2",
-    "standard": "^14.3.4"
+    "jest": "^27.0.6",
+    "standard": "^14.3.4",
+    "typescript": "^4.3.5"
   }
 }
