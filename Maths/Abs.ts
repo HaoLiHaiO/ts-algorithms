@@ -1,4 +1,6 @@
 /*
+  Modified by Alexandre Pinel
+
     author: PatOnTheBack
     license: GPL-3.0 or later
 
@@ -12,9 +14,7 @@
 */
 
 /**
- * 
- * @param num 
- * @returns 
+ * Returns absolute value
  */
 export const absVal = (num: number): number => {
   return num < 0 ? -num : num
