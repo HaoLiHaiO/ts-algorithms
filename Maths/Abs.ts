@@ -16,6 +16,4 @@
 /**
  * Returns absolute value
  */
-export const absVal = (num: number): number => {
-  return num < 0 ? -num : num
-}
+export const absVal = (num: number): number => num < 0 ? -num : num
