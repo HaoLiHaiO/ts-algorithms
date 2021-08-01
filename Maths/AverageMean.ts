@@ -1,5 +1,6 @@
-'use strict'
 /*
+  Modified by Alexandre Pinel - converted to Typescript
+
     author: PatOnTheBack
     license: GPL-3.0 or later
 
@@ -12,16 +13,15 @@
         https://en.wikipedia.org/wiki/Mean
 */
 
-const mean = (nums) => {
-  // This is a function returns average/mean of array
+/**
+ * Returns the average of an array of number - sum of all its numbers divided
+ * by its number of items
+ */
+const mean = (nums: number[]): number => {
   let sum = 0
 
-  // This loop sums all values in the 'nums' array using forEach loop
-  nums.forEach(function (current) {
-    sum += current
-  })
+  nums.forEach(current => sum += current)
 
-  // Divide sum by the length of the 'nums' array.
   const avg = sum / nums.length
   return avg
 }
