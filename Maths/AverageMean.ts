@@ -18,11 +18,11 @@
  * by its number of items
  */
 const mean = (nums: number[]): number => {
-  let sum = 0
+  let sum: number = 0
 
   nums.forEach(current => sum += current)
 
-  const avg = sum / nums.length
+  const avg: number = sum / nums.length
   return avg
 }
 
