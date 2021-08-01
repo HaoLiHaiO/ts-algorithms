@@ -1,4 +1,6 @@
 /*
+ * Modified by Alexandre Pinel - converted to typescript
+ *
  * Median: https://en.wikipedia.org/wiki/Median
  *
  * function averageMedian
@@ -19,20 +21,15 @@
   * 3.5
   */
 
-const averageMedian = (numbers) => {
-  let median = 0; const numLength = numbers.length
+const averageMedian = (numbers: number[]): number => {
+  let median: number = 0; 
+  const numLength: number = numbers.length
   numbers = numbers.sort(sortNumbers)
 
-  if (numLength % 2 === 0) {
-    median = (numbers[numLength / 2 - 1] + numbers[numLength / 2]) / 2
-  } else {
-    median = numbers[(numLength - 1) / 2]
-  }
-
-  return median
+  return median = numLength % 2 === 0 ? (numbers[numLength / 2 - 1] + numbers[numLength / 2]) / 2 : numbers[(numLength - 1) / 2]
 }
 
-const sortNumbers = (num1, num2) => {
+const sortNumbers = (num1: number, num2: number) => {
   return num1 - num2
 }
 
