@@ -15,4 +15,4 @@ Using eslint, prettier.
 
 ## Algorithm Explanation
 
-see our [wiki](https://github.com/TheAlgorithms/Javascript/wiki)
+see The Algorithms' Javascript wiki: [wiki](https://github.com/TheAlgorithms/Javascript/wiki)
