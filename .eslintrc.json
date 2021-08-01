@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "xo"
@@ -12,8 +13,21 @@
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint",
     ],
     "rules": {
+        "semi": [
+            "error",
+            "never"
+        ],
+        "no-invalid-regexp": "error",
+        "indent": ["error", 2],
+        "no-trailing-spaces": "error",
+        "linebreak-style": ["error", "unix"],
+        "no-empty": "error",
+        "no-empty-function": "error",
+        "no-extra-semi": "error",
+        "object-curly-spacing": ["error", "always"],
+        "no-mixed-operators": ["error", {"allowSamePrecedence": true}]
     }
 }
