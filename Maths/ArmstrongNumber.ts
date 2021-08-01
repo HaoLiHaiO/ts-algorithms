@@ -1,4 +1,6 @@
 /**
+ * Modified by Alexandre Pinel - typescript version
+ * 
  * Author: dephraiim
  * License: GPL-3.0 or later
  *
@@ -8,8 +10,8 @@
  *
  */
 
-const armstrongNumber = (num) => {
-  if (num < 0 || typeof num !== 'number') return false
+const armstrongNumber = (num: number): boolean => {
+  if (num < 0) return false
 
   let newSum = 0
 
