@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1627811553083" clover="3.2.0">
-  <project timestamp="1627811553084" name="All files">
-    <metrics statements="43" coveredstatements="43" conditionals="35" coveredconditionals="34" methods="17" coveredmethods="17" elements="95" coveredelements="94" complexity="0" loc="43" ncloc="43" packages="1" files="5" classes="5"/>
+<coverage generated="1628428452774" clover="3.2.0">
+  <project timestamp="1628428452775" name="All files">
+    <metrics statements="51" coveredstatements="51" conditionals="37" coveredconditionals="36" methods="18" coveredmethods="18" elements="106" coveredelements="105" complexity="0" loc="51" ncloc="51" packages="1" files="6" classes="6"/>
     <file name="Abs.ts" path="/home/phluxcoblt/prog/Javascript/Maths/Abs.ts">
       <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="19" count="2" type="cond" truecount="2" falsecount="0"/>
@@ -59,6 +59,17 @@
       <line num="32" count="1" type="stmt"/>
       <line num="33" count="32" type="stmt"/>
       <line num="36" count="1" type="stmt"/>
+    </file>
+    <file name="BinaryConvert.ts" path="/home/phluxcoblt/prog/Javascript/Maths/BinaryConvert.ts">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="11" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="15" count="8" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
