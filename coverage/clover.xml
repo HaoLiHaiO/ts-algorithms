@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1628428452774" clover="3.2.0">
-  <project timestamp="1628428452775" name="All files">
-    <metrics statements="51" coveredstatements="51" conditionals="37" coveredconditionals="36" methods="18" coveredmethods="18" elements="106" coveredelements="105" complexity="0" loc="51" ncloc="51" packages="1" files="6" classes="6"/>
+<coverage generated="1628531184692" clover="3.2.0">
+  <project timestamp="1628531184692" name="All files">
+    <metrics statements="59" coveredstatements="59" conditionals="41" coveredconditionals="40" methods="19" coveredmethods="19" elements="119" coveredelements="118" complexity="0" loc="59" ncloc="59" packages="1" files="7" classes="7"/>
     <file name="Abs.ts" path="/home/phluxcoblt/prog/Javascript/Maths/Abs.ts">
       <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="19" count="2" type="cond" truecount="2" falsecount="0"/>
@@ -70,6 +70,17 @@
       <line num="15" count="8" type="stmt"/>
       <line num="16" count="2" type="stmt"/>
       <line num="23" count="1" type="stmt"/>
+    </file>
+    <file name="BinaryExponentiationIterative.ts" path="/home/phluxcoblt/prog/Javascript/Maths/BinaryExponentiationIterative.ts">
+      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="19" count="3" type="stmt"/>
+      <line num="20" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="21" count="6" type="stmt"/>
+      <line num="22" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="3" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

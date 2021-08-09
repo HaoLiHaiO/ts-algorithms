@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for ArmstrongNumber.ts</title>
+    <title>Code coverage report for BinaryExponentiationIterative.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,27 +19,27 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> ArmstrongNumber.ts</h1>
+        <h1><a href="index.html">All files</a> BinaryExponentiationIterative.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
@@ -83,7 +83,12 @@
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -97,44 +102,42 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
- * Modified by Alexandre Pinel - typescript version
+ * Modified By Alexandre Pinel
  * 
- * Author: dephraiim
- * License: GPL-3.0 or later
- *
- * An Armstrong number is equal to the sum of its own digits each raised to the power of the number of digits.
- * For example, 370 is an Armstrong number because 3*3*3 + 7*7*7 + 0*0*0 = 370.
- * An Armstrong number is often called Narcissistic number.
- *
- */
-&nbsp;
-const armstrongNumber = (num: number): boolean =&gt; {
-  if (num &lt; 0) return false
-&nbsp;
-  let newSum = 0
-&nbsp;
-  const numArr = num.toString().split('')
-  numArr.forEach((num) =&gt; {
-    newSum += parseInt(num) ** numArr.length
-  })
-&nbsp;
-  return newSum === num
+ * To calculate x^n i.e. exponent(x, n) in O(log n) time in iterative way
+ * n is an integer and n &gt;= 0
+ * 
+ * Explanation: https://en.wikipedia.org/wiki/Exponentiation_by_squaring
+ * Examples:
+ * 2^3 = 8
+ * 5^0 = 1
+ * Uses the fact that
+ * exponent(x, n)
+ * exponent(x, n)
+ * = exponent(x*x, floor(n/2))   ; if n is odd
+ * = x*exponent(x*x, floor(n/2)) ; if n is even
+*/
+const exponent = (x: number, n: number): number =&gt; {
+  let ans: number = 1
+  while (n &gt; 0) {
+    if (n % 2 !== 0) ans *= x
+    n = Math.floor(n / 2)
+    if (n &gt; 0) x *= x
+  }
+  return ans
 }
 &nbsp;
-export { armstrongNumber }
+export { exponent }
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
